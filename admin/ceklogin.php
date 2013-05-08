@@ -12,6 +12,6 @@ if (count($row) > 0){
 }
 else
 {
-    echo"<script>alert('USERNAME TIDAK DITEMUKAN');</script>";
+    echo"<script>alert('USERNAME TIDAK DITEMUKA');</script>";
 }
 ?>
