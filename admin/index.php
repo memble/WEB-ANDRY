@@ -6,20 +6,20 @@
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action="ceklogin.php">
+<form id="form1" name="form1" method="POST" action="ceklogin.php">
 
 <table width="1078" border="0">
   <tr>
     <td width="113" height="23">username</td>
-    <td width="955"><input type='text' name='txtusername' size='50' /></td>
+    <td width="955"><input type="text" name="txtusername" size="50" /></td>
   </tr>
   <tr>
     <td>password</td>
-    <td><input type='password' name='txtpassword' size='50' /></td>
+    <td><input type="password" name="txtpassword" size="50" /></td>
   </tr>
   <tr>
   <td></td>
-  <td><input name="btnlogin" type="submit" value="Login" /></td>
+  <td><input type="submit" value="Login" /></td>
   </tr>
 </table>
 

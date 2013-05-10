@@ -1,4 +1,5 @@
 <?php
+const BASE_URL = '/andri';
 include 'config/koneksi.php';
 ?>
 
@@ -37,7 +38,7 @@ include 'config/koneksi.php';
                   </tr>
                   <tr>
                     <td>
-                    <img src="Style/images/great-billboard.jpg" class="gambar_artikel" width="100" height="" />';
+                    <img src="' . BASE_URL . '/admin/style/images/upload/kecil/' . $row['gambar'] . '" class="gambar_artikel" width="100" height="" />';
             echo $row['content'];        
             echo '</td></tr></table><br />';
          }
