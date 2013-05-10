@@ -15,6 +15,7 @@
 	<ul class="nav">
     	<li><a href="index.php?halaman=home">Home</a></li>
         <li><a href="index.php?halaman=artikel">Artikel</a></li>
+        <li><a href="logout.php">Logout</a></li>
     </ul>
 </div>
 <div class="content"><?php include 'halaman.php'; ?></div>
