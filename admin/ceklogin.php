@@ -5,13 +5,14 @@ const BASE_URL = '/andri';
 $user= $_POST['txtusername'];
 $password= $_POST['txtpassword'];
 $query=mysql_query("select * from login where username='$user' and password='$password'");
-$row= mysql_fetch_array($query);
+$rows=mysql_num_rows($query);
+$data= mysql_fetch_array($query);
 
-if (count($row) > 0){
+if ($rows > 0){
     header("location:" . BASE_URL . "/admin/halaman/index.php?halaman=home");	
 }
 else
 {
-    echo"<script>alert('USERNAME TIDAK DITEMUKAN');</script>";
+    header("location:" . BASE_URL . "/admin/");
 }
 ?>
