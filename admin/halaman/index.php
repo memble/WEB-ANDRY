@@ -1,3 +1,15 @@
+<?php
+session_start();
+error_reporting(0);
+if($_SESSION[login]==0){
+  header('location:logout.php');
+} else {
+    if (empty($_SESSION['namauser']) AND empty($_SESSION['passuser']) AND $_SESSION['login']==0){
+        echo "<link href='style.css' rel='stylesheet' type='text/css'>
+        <center>Untuk mengakses halaman, Anda harus login <br>";
+        echo "<a href=index.php><b>LOGIN</b></a></center>";
+    } else {
+        ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -23,3 +35,7 @@
 </div>
 </body>
 </html>
+<?php
+}
+}
+?>
