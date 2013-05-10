@@ -18,7 +18,7 @@ include 'config/koneksi.php';
    	   <ul class="nav">
 <li><a href="index.php">Home</a></li>
           <li><a href="#">Profile</a></li>
-          <li><a href="?cari=semua">Artikel</a></li>
+          <li><a href="#">Artikel</a></li>
           <li><a href="#">Gallery</a></li>
           <li><a href="#">Tentang</a></li>
        </ul>
