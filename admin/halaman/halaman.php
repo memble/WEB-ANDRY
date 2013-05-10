@@ -5,7 +5,7 @@ include '../../config/koneksi.php';
 $halaman = $_GET['halaman'];
 
 if($halaman == 'home') {
-	echo 'Selamat datang [] di Halman Administrator !!';
+	echo 'Selamat datang ' . $_SESSION["namauser"] . ' di Halaman Administrator !!';
 }
 elseif($halaman == 'artikel') {
 	include '/artikel/index.php';
